@@ -1,0 +1,194 @@
+body {
+	background-image:  url(../images/backg5.jpg);
+	background-size: cover;
+	text-align: center;
+	font-family: Verdana;
+}
+
+/*HEADING SECTION*/
+.header {
+	background-size: cover;
+	margin: 2px;
+	text-align: center;
+	font-family: Cambria;
+}
+
+.header p {
+	font-family: Cambria;
+	color: black
+}
+
+/*SHOWCASE SECTION*/
+.showcase {
+	padding: 2px;
+	text-align: center;
+	color: black;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-bottom: 20px;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 2fr 1fr;
+}
+
+.showcase-left {
+	background: gray;
+	color: #e9ccb1;
+	padding: 30px;
+	display: grid;
+	grid-gap: 1px;
+	grid-template-row: 5fr 4fr;
+	margin-left: 80px;
+	border-radius: 25px;
+}
+
+.showcase-left h2 {
+	font-family: Century Gothic;
+}
+
+
+.showcase-right {
+	padding: 10px;
+	display: grid;
+	grid-gap: 1px;
+	text-align: center;
+	margin-right: 30px;
+	font-family: Century Gothic;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px
+}
+
+/*MAIN ARTICLE SECTION*/
+.main-article-one {
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 20px;
+	padding: 70px;
+}
+
+.one {
+	grid-column: 1/2;
+	grid-row: 1/2;
+	padding: 30px;
+	background-image: url(../images/elem.jpg);
+	background-repeat: no-repeat;
+	box-shadow: 0 0 5px #9f8260;
+	background-position: center;
+	background-size: cover;
+	border-radius: 30px;
+}
+
+.one:hover {
+	background: gray;
+	color: #e9ccb1;
+}
+.one p {
+	font-family: Century Gothic;
+}
+
+.one h2 {
+	font-family: Cambria;
+}
+.two {
+	grid-column: 2/3;
+	grid-row: 1/2;
+	padding: 30px;
+	background-image: url(../images/hs.jpg);
+	background-repeat: no-repeat;
+	box-shadow: 0 0 5px #9f8260;
+	background-position: center;
+	background-position: center;
+	border-radius: 30px;
+	background-size: cover;
+}
+
+.two p {
+	font-family: Century Gothic;
+}
+
+.two h2 {
+	font-family: Cambria;
+}
+.two:hover {
+	background: gray;
+	color: #e9ccb1;
+}
+
+.three {
+	grid-column: 3/4;
+	grid-row: 1/2;
+	padding: 20px;
+	background-image: url(../images/college.jpg);
+	background-repeat: no-repeat;
+	box-shadow: 0 0 5px #9f8260;
+	background-position: center;
+	border-radius: 30px;
+	background-size: cover;
+}
+
+.three p {
+	font-family: Century Gothic;
+}
+
+.three h1 {
+	font-family: Cambria;
+}
+.three:hover {
+	background: gray;
+	color: #e9ccb1;
+}
+.main-article-two {
+	margin: 100px;
+	padding: 30px;
+	border: 5px solid;
+}
+
+.main-article-two h1 {
+	font-family: Autumn in November;
+}
+.EB h1 {
+	font-family: Autumn in November;
+}
+
+.SAT h1 {
+	font-family: Autumn in November;
+}
+.main-article-three {
+    border: 3px solid;
+	margin: 50px;
+	padding: 30px;
+}
+
+.main-article-three h3 {
+	font-family: Century Gothic;
+	color: green;
+}
+
+/*SHOWCASE SECTION*/
+.footer h1 {
+	font-family: Impact;
+}
+
+.footer1 h3 {
+	font-family: Autumn in November;
+	border: 3px solid;
+	padding: 10px;
+	margin: 10px;
+}
+
+#nav-bar {
+	list-style: none;
+	padding: 0;
+	margin: 10px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(5,1fr);
+	display: center;
+} 	
+

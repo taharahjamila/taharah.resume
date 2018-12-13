@@ -1,0 +1,41 @@
+body {
+	background-image:  url(../images/backg2.jpg);
+	background-size: cover;
+	text-align: center;
+	font-family: Autumn in November;
+	margin-top: 10px;
+}
+
+.footer h1{
+	font-family: Autumn in November;
+}
+
+.footer1:hover {
+	background: gray;
+	color: #e9ccb1;
+}
+
+.text-center {
+	text-align: center; 
+	margin: 10px;
+}
+
+$colors = {
+  'primary': #2980b9,
+}
+
+
+
+for $key,$hex in $colors
+  .button-{$key}
+    &, &:focus, &:active
+      color white
+      background-color $hex
+      border-color @background-color
+    &:hover
+      color white
+      background-color darken($hex, 10%)
+      border-color @background-color
+.button
+  &.button-block
+    width 100%

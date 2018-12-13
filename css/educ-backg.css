@@ -1,0 +1,109 @@
+body {
+	background-image:  url(../images/backg5.jpg);
+	background-size: cover;
+	text-align: center;
+	font-family: Verdana;
+	margin-top: 10px;
+}
+
+.main-article-one {
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 20px;
+	padding: 70px;
+}
+
+.one {
+	grid-column: 1/2;
+	grid-row: 1/2;
+	padding: 30px;
+	background-image: url(../images/elem.jpg);
+	background-repeat: no-repeat;
+	box-shadow: 0 0 5px #9f8260;
+	background-position: center;
+	background-size: cover;
+}
+
+.one:hover {
+	background: gray;
+	color: #e9ccb1;
+}
+.one p {
+	font-family: Century Gothic;
+}
+
+.one h2 {
+	font-family: Cambria;
+}
+.two {
+	grid-column: 2/3;
+	grid-row: 1/2;
+	padding: 30px;
+	background-image: url(../images/hs.jpg);
+	background-repeat: no-repeat;
+	box-shadow: 0 0 5px #9f8260;
+	background-position: center;
+	background-position: center;
+	border-radius: 10px;
+	background-size: cover;
+}
+
+.two p {
+	font-family: Century Gothic;
+}
+
+.two h2 {
+	font-family: Cambria;
+}
+.two:hover {
+	background: gray;
+	color: #e9ccb1;
+}
+
+.three {
+	grid-column: 3/4;
+	grid-row: 1/2;
+	padding: 20px;
+	background-image: url(../images/college.jpg);
+	background-repeat: no-repeat;
+	box-shadow: 0 0 5px #9f8260;
+	background-position: center;
+	border-radius: 30px;
+	background-size: cover;
+}
+
+.three p {
+	font-family: Century Gothic;
+}
+
+.three h1 {
+	font-family: Cambria;
+}
+.three:hover {
+	background: gray;
+	color: #e9ccb1;
+}
+
+.EB h1 {
+	font-family: Autumn in November;
+}
+
+.text-center { text-align: center; }
+$colors = {
+  'primary': #2980b9,
+}
+
+for $key,$hex in $colors
+  .button-{$key}
+    &, &:focus, &:active
+      color white
+      background-color $hex
+      border-color @background-color
+    &:hover
+      color white
+      background-color darken($hex, 10%)
+      border-color @background-color
+.button
+  &.button-block
+    width 100%
